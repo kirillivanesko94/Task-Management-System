@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+  psql:
+    image: "postgres:14.5"
+    environment:
+      - POSTGRES_USER=prod
+      - POSTGRES_PASSWORD=prod-pwd
+      - POSTGRES_DB=jira
