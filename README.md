@@ -1,7 +1,7 @@
-# fake-jira
+# Task management system
 
 
-## Сборка и запуск приложения
+## Сборка и запуск приложения:
 
 Собираем и запускаем приложение
 ```
@@ -46,3 +46,10 @@ curl -v -H 'Content-Type: application/json' \
     -X POST http://localhost:8080/tasks \
     -d '{"title": "Пример задачи", "description": "Описание", "priority": "MINOR"}' 
 ```
+## Technical stack:
+* java 17
+* docker
+* flyWay
+* Spring (Boot, Security)
+* JWT token
+
